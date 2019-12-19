@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Celine Marie Portfolio</title>
+</head>
+
+<body>
+  <div hidden id="spinner"></div>
+
+  <div>
+    <div class="background-landing-page"></div>
+  </div>
+
+  <article class="logo">
+    <h1>CELINE MARIE</h1>
+    <div class="McMiller"> <img class="background-landing-page-image" src="images/mcmiller.jpg" alt="Art piece"> </div>
+    <h1 class="white-logo">CELINE MARIE</h1>
+  </article>
+
+  <div class="categories">
+    <template class="category-folder-template">
+      <div class="category-folder cursor">
+        <div class="category-folder-structure">
+          <!-- <img class="folder-img folder-back" src="./icons/desktop-icons/folder-back.png" alt=""> -->
+          <!-- <img class="image-sample" src="./images/water.png" alt=""> -->
+          <!-- <div class="images-inside-folder-icon "></div> -->
+          <img class="folder-img folder-front" src="./icons/desktop-icons/file2.png" alt="Folder icon" />
+        </div>
+        <h2 class="category-name name">Paintings</h2>
+      </div>
+    </template>
+    <div class="contact-page cursor">
+      <img class="folder-img contact-img" src="./icons/desktop-icons/notepad.png" alt="Notepad icon" />
+      <h2 class="category-name">contact.txt</h2>
+    </div>
+
+    <div class="about-page-btn cursor">
+      <img class="folder-img contact-img" src="./icons/desktop-icons/notepad.png" alt="folder icon" />
+      <h2 class="category-name">about.txt</h2>
+    </div>
+
+    <div class="video-page-btn cursor">
+      <img class="folder-img contact-img" src="./icons/desktop-icons/mp4video.png" alt="Video icon" />
+      <h2 class="category-name">video.mp4</h2>
+    </div>
+  </div>
+
+  <div class="open-folder-container d-none">
+    <h2 class="name-of-the-folder d-none">Name</h2>
+    <div class="open-folder-icons">
+      <img class="folder-menu-btn back-arrow cursor" src="./icons/right-arrow.png" alt="Folder separation arrow" />
+      <div class="minimizeBtns minimize">
+        <img class="folder-menu-btn cursor justify-self" src="./icons/minimize.png" alt="Minimise button" />
+      </div>
+      <img class="folder-menu-btn cursor  maximize justify-self" src="./icons/maximize.png" alt="Maximise button" />
+      <img class="folder-menu-btn cursor closeBTn justify-self" src="./icons/cancel.svg" alt="Close button" />
+    </div>
+
+    <div class="folder-path">
+      <div class="custom-path">
+        <img class="folder-path-icon" src="./icons/desktop-icons/file2.png" alt="Folder icon" />
+        <img class="folder-path-icon" src="./icons/next.svg" alt="Next arrow" />
+        <h3 class="path-name thispc cursor"><span class="name">this pc</span></h3>
+      </div>
+      <div class="path-to-the-folder cursor"></div>
+    </div>
+    <div class="art-pieces-categories artPieces thispc uniClass"></div>
+  </div>
+  <!-- video -->
+
+  <div class="open-video-container d-none">
+    <div class="open-video-icons">
+      <img class="folder-menu-btn notepad-icon" src="icons/desktop-icons/mediaplayer.png" alt="Media player icon" />
+      <h2 class="notepad-name">Celine</h2>
+      <img class="folder-menu-btn closeBTnvideo cursor justify-self" src="./icons/cancel.svg" alt="Close button" />
+    </div>
+
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+        src="https://player.vimeo.com/video/379977883?title=0&byline=0&portrait=0"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay; fullscreen"
+        allowfullscreen></iframe></div>
+
+  </div>
+
+
+  <!-- aboutpage -->
+  <div class="open-about-page d-none">
+    <div class="open-about-icons">
+      <img class="folder-menu-btn notepad-icon" src="icons/desktop-icons/notepad.png" alt="Notepad icon" />
+      <h2 class="notepad-name">about - Notepad</h2>
+      <div class="minimizeBtns minimizeNotepadAbout cursor">
+        <img class="folder-menu-btn  justify-self" src="./icons/minimize.png" alt="Minimise button image" />
+      </div>
+      <img class="folder-menu-btn maximizeNotepadAbout cursor justify-self" src="./icons/maximize.png" alt="Maximise" />
+      <img class="folder-menu-btn closeBTnAbout cursor justify-self" src="./icons/cancel.svg" alt="Close button" />
+    </div>
+
+    <div class="open-about-content">
+      <img src="images/Celine.png" alt="Artist image" class="about_image">
+        <p>"Life sucks but everything's funny."</p>
+        <br>
+        <p>
+        Celine Marie Brøndmo is a 22 year old American-Norwegian artist based
+        in Copenhagen, Denmark. As the child of a painter and an investor she
+        had the chance to see different perspectives of the world, but was
+        encouraged by both parents to express herself through creativity since
+        an early age. Celine's art is diverse - she paints, makes sculptures,
+        illustrates, makes digital illustrations and in her free time she even
+        makes tattoos for her friends. She is inspired by her daily life, by
+        political events and by philosophers, whose theories about life and
+        existence she likes to reimagine in her own way and tries to put them
+        on canvas. Growing up in Norway she grew fond of nature, particularly
+        the sea, which is a returning motif in her art (illustrated as well as
+        sculpted). She likes the duality of it, she says, how it represents
+        life, but it can also be cruel and dangerous.
+      </p>
+    </div>
+  </div>
+
+  <!-- contactpage -->
+  <div class="open-contact-page d-none">
+    <div class="open-contact-icons">
+      <img class="folder-menu-btn notepad-icon" src="icons/desktop-icons/notepad.png" alt="Notepad icon" />
+      <h2 class="notepad-name">contact - Notepad</h2>
+      <div class="minimizeBtns minimizeNotepad cursor">
+        <img class="folder-menu-btn   justify-self" src="./icons/minimize.png" alt="Minimise button" />
+      </div>
+      <img class="folder-menu-btn maximizeNotepad justify-self cursor" src="./icons/maximize.png"
+        alt="Maximise button" />
+      <img class="folder-menu-btn closeBTnContact justify-self cursor" src="./icons/cancel.svg" alt="Close button" />
+    </div>
+    <div class="open-contact-content">
+      <p>
+        e-mail:
+        <a href="mailto:celine_marie@gmail.com">celine_marie@gmail.com</a>
+      </p>
+      <br />
+      <p>
+        instagram:
+        <a target="_blank" href="https://www.instagram.com/celine____marie/">
+          https://www.instagram.com/celine____marie/</a>
+      </p><br>
+      <p>
+        behance:
+        <a target="_blank" href="https://www.behance.net/celinemariee?tracking_source=search%7Cceline%20marie">
+          https://www.behance.net/celinemariee?tracking_source=search%7Cceline%20marie</a>
+      </p><br>
+      <p>
+        artboost:
+        <a target="_blank" href="https://artboost.com/celinemarie">
+          https://artboost.com/celinemarie</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- pop up window template -->
+  <!-- <template class="info-pop-up-template"> -->
+  <div class="info-pop-up d-none">
+    <div class="info-pop-up-icons">
+      <p class="info-pop-up-title">Information</p>
+      <img class="info-pop-up-closeBtn cursor" src="./icons/cancel.svg" alt="cancel button" />
+    </div>
+    <div class="info-pop-up-content">
+      <h4 id="art-piece-name" class="art-piece-name">Name</h4>
+      <h4 id="art-piece-info" class="art-piece-info">Info</h4>
+      ,
+      <h4 id="art-piece-year" class="art-piece-year">Year</h4>
+      <button class="info-pop-up-ok cursor">OK</button>
+    </div>
+  </div>
+
+  <!-- </template> -->
+
+  <template class="sub-category-template">
+    <article class="subcategory">
+      <div class="subcategory-icon-and-name cursor">
+        <img class="sub-category-icon" src="./icons/desktop-icons/file2.png" alt="" />
+        <h4 class="subCategoryName name">Name</h4>
+      </div>
+
+      <div class="artSubcategory uniClass">
+        <div class="artPieces uniClass">
+          <!-- <div class="artPieces"></div> -->
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <template class="art-piece-template">
+    <div class="art-piece cursor">
+      <img class="art-piece-large-icon" src="" alt="Image of art piece" />
+      <h4 class="art-piece-name">Name</h4>
+      <h4 class="descirption d-none">descirption</h4>
+      <h4 class="year d-none">year</h4>
+    </div>
+  </template>
+
+  <template class="path-template">
+    <div class="pathNameAndIcon">
+      <img class="folder-path-icon" src="./icons/next.svg" alt="Folder icon" />
+      <h3 class="path-name name cursor">This PC</h3>
+    </div>
+  </template>
+
+  <div class="photo-container d-none">
+    <article id="photoHeader" class="photoHeader">
+      <h4>Name</h4>
+      <img id="closeImg" class="closeImg cursor" src="./icons/cancel.svg" alt="" />
+    </article>
+    <div class="photo-bg">
+      <img id="photo" class="photo" src="./images/water.png" alt="photo of art piece" />
+    </div>
+    <div class="arrows-container">
+      <div class="arrows-container-1">
+        <img class="iconPhoto arrowPhoto arrowPreviousPhoto cursor" src="./icons/right-arrow.png" alt="Arrow back" />
+      </div>
+      <div class="arrows-container-2">
+        <img class="iconPhoto enlarge cursor" src="./icons/full-screen-selector.svg" alt="enlarge photo" />
+      </div>
+      <div class="arrows-container-3">
+        <img class="iconPhoto arrowPhoto arrowNextPhoto cursor" src="./icons/right-arrow.png" alt="arrow next" />
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="contact.js"></script>
+</body>
+
+</html>
